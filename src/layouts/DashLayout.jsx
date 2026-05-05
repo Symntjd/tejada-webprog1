@@ -15,7 +15,6 @@ import {
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import PeopleIcon from "@mui/icons-material/People";
-import HomeIcon from "@mui/icons-material/Home";
 
 const drawerWidth = 240;
 
