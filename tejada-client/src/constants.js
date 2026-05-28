@@ -1,5 +1,5 @@
 const constants = {
-  HOST: "http://localhost:8000/api",
+  HOST: import.meta.env.VITE_API_URL || "http://localhost:8000/api",
 };
 
 export default constants;
