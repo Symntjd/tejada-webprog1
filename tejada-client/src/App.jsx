@@ -33,8 +33,7 @@ function App() {
     <Routes>
       {/* Website Pages */}
 <Route path="/" element={<Layout />}>
-  <Route index element={<Navigate to="/signin" replace />} />
-  <Route path="articles" element={<ArticleListPage />} />
+<Route index element={<HomePage />} />  <Route path="articles" element={<ArticleListPage />} />
   <Route path="articles/:id" element={<ArticlePage />} />
   <Route path="about" element={<AboutPage />} />
 </Route>
