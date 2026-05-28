@@ -33,7 +33,7 @@ function SignInPage() {
       localStorage.setItem("userType", response.data.type);
       localStorage.setItem("firstName", response.data.firstName);
 
-      navigate("");
+      navigate("/");
     } catch (error) {
       setErrorMessage(
         error.response?.data?.message || "Login failed. Please try again."
