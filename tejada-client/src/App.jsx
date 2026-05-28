@@ -32,13 +32,12 @@ function App() {
   return (
     <Routes>
       {/* Website Pages */}
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="articles" element={<ArticleListPage />} />
-        <Route path="articles/:id" element={<ArticlePage />} />
-        <Route path="about" element={<AboutPage />} />
-      </Route>
-
+<Route path="/" element={<Layout />}>
+  <Route index element={<Navigate to="/signin" replace />} />
+  <Route path="articles" element={<ArticleListPage />} />
+  <Route path="articles/:id" element={<ArticlePage />} />
+  <Route path="about" element={<AboutPage />} />
+</Route>
       {/* Auth Pages */}
       <Route path="/" element={<AuthLayout />}>
         <Route path="signin" element={<SignInPage />} />
